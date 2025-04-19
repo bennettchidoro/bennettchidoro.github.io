@@ -13,15 +13,25 @@
 
 <body class="avenir helvetica bg-white">
 
-  <div class="absolute top-1 left">
-    <a href="/" class="bg-white ph3 pt3 pb2 ba0 b">BC</a>
-  </div>
+  
+  <header class="mh4 mw7 flex justify-between items-center pt4">
+    <a href="/" class="b f4 no-underline primary">BC</a>
+    <nav class="f5">
+      <a class="nav-link dim primary mr3" href="/about">about</a>
+      <a class="nav-link dim primary mr3" href="/">posts</a>
+      <a class="nav-link dim primary" href="https://twitter.com/ObiThaGreat" target="_blank">@ObiThaGreat</a>
+    </nav>
+  </header>
 
-  <div class="hero" style="background-image: url(/images/purple-splash.png);">
-    <div class="pv6-ns pa5 tl-ns tc">
-      <h1 class="f-headline-ns f3 lh-title balance-text dib ph4 pv2 bg-white">Bennett Chidoro</h1>
+  {% if page.url == "/" %}
+    <div class="black-90 f2 fw7 mw7 mh4 mt6 lh-title">
+      <p>Top of the morning 🎩</p>
+      <p>I'm Bennett. You can call me B, though.</p>
+      <p>I'm obsessed with psychedelics, internet marketing, and being able to reinvent yourself as many times as it takes to get the job done.  </p>
+      <p>Welcome to one of the most magical crevices on the internet 🔮</p>
+      
     </div>
-  </div>
+  {% endif %}  
 
   <article class="f4 lh-copy pr6-l pl6-l">
     <div class="fl w-70-l pa4 mb6">
